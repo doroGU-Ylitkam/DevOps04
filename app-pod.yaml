@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: service-for-study01-pod
+  labels:
+    app: service-for-study01
+spec:
+  containers:
+  - name: app-container
+    image: vicryabenko/devops01:latest 
+    ports:
+    - containerPort: 8080
